@@ -11,6 +11,8 @@
 		D38987A52A3F7C9B00D40C7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38987A42A3F7C9B00D40C7E /* ContentView.swift */; };
 		D38987A72A3F7C9C00D40C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D38987A62A3F7C9C00D40C7E /* Assets.xcassets */; };
 		D38987AA2A3F7C9C00D40C7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D38987A92A3F7C9C00D40C7E /* Preview Assets.xcassets */; };
+		D38987B32A3F7D1D00D40C7E /* NodePackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38987B22A3F7D1D00D40C7E /* NodePackage.swift */; };
+		D38987B72A3F820E00D40C7E /* PackageJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38987B62A3F820E00D40C7E /* PackageJson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		D38987A62A3F7C9C00D40C7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D38987A92A3F7C9C00D40C7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D38987AB2A3F7C9C00D40C7E /* Involucrum.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Involucrum.entitlements; sourceTree = "<group>"; };
+		D38987B22A3F7D1D00D40C7E /* NodePackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodePackage.swift; sourceTree = "<group>"; };
+		D38987B62A3F820E00D40C7E /* PackageJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackageJson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 		D38987A12A3F7C9B00D40C7E /* Involucrum */ = {
 			isa = PBXGroup;
 			children = (
+				D38987B12A3F7D0600D40C7E /* Models */,
 				D38987A22A3F7C9B00D40C7E /* InvolucrumApp.swift */,
 				D38987A42A3F7C9B00D40C7E /* ContentView.swift */,
 				D38987A62A3F7C9C00D40C7E /* Assets.xcassets */,
@@ -67,6 +72,15 @@
 				D38987A92A3F7C9C00D40C7E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D38987B12A3F7D0600D40C7E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D38987B62A3F820E00D40C7E /* PackageJson.swift */,
+				D38987B22A3F7D1D00D40C7E /* NodePackage.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38987B32A3F7D1D00D40C7E /* NodePackage.swift in Sources */,
 				D38987A52A3F7C9B00D40C7E /* ContentView.swift in Sources */,
+				D38987B72A3F820E00D40C7E /* PackageJson.swift in Sources */,
 				D38987A32A3F7C9B00D40C7E /* InvolucrumApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
