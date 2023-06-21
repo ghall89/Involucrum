@@ -10,18 +10,25 @@ struct ContentView: View {
 	@State private var showAlert: Bool = false
 	
 	var body: some View {
+		
 		HStack {
-			VStack {
-				DetailsListView(data: $packageJSONData, readMe: $readMe)
-			}
-			.frame(width: 220)
-			
-			VStack {
-				ScrollView {
-					Markdown(content: $readMe)
+			if projectLocation != nil && packageJSONData != nil {
+				VStack {
+					DetailsListView(data: $packageJSONData, readMe: $readMe)
+				}
+				.frame(width: 220)
+				
+				VStack {
+					ScrollView {
+						Markdown(content: $readMe)
+					}
+				}
+				.frame(maxWidth: .infinity)
+			} else {
+				VStack {
+					Text("No project loaded...")
 				}
 			}
-			.frame(maxWidth: .infinity)
 		}
 		.toolbar(content: {
 //			ToolbarItem(content: {
