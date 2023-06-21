@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D302F1D42A3FDA0600614246 /* GetReadme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D302F1D32A3FDA0600614246 /* GetReadme.swift */; };
+		D302F1D82A3FDA6200614246 /* Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = D302F1D72A3FDA6200614246 /* Markdown */; };
 		D38987A32A3F7C9B00D40C7E /* InvolucrumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38987A22A3F7C9B00D40C7E /* InvolucrumApp.swift */; };
 		D38987A52A3F7C9B00D40C7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38987A42A3F7C9B00D40C7E /* ContentView.swift */; };
 		D38987A72A3F7C9C00D40C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D38987A62A3F7C9C00D40C7E /* Assets.xcassets */; };
@@ -14,9 +16,13 @@
 		D38987B32A3F7D1D00D40C7E /* NodePackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38987B22A3F7D1D00D40C7E /* NodePackage.swift */; };
 		D38987B72A3F820E00D40C7E /* PackageJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38987B62A3F820E00D40C7E /* PackageJson.swift */; };
 		D38987B92A3F907A00D40C7E /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38987B82A3F907A00D40C7E /* WebView.swift */; };
+		D38987BE2A3FD17700D40C7E /* DetailsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38987BD2A3FD17700D40C7E /* DetailsListView.swift */; };
+		D38987C02A3FD6A300D40C7E /* ExecuteCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38987BF2A3FD6A300D40C7E /* ExecuteCommand.swift */; };
+		D38987C22A3FD73900D40C7E /* AddDependencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38987C12A3FD73900D40C7E /* AddDependencyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D302F1D32A3FDA0600614246 /* GetReadme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReadme.swift; sourceTree = "<group>"; };
 		D389879F2A3F7C9B00D40C7E /* Involucrum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Involucrum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38987A22A3F7C9B00D40C7E /* InvolucrumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvolucrumApp.swift; sourceTree = "<group>"; };
 		D38987A42A3F7C9B00D40C7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -28,6 +34,9 @@
 		D38987B82A3F907A00D40C7E /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		D38987BA2A3F9F0500D40C7E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D38987BB2A3FA0A700D40C7E /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		D38987BD2A3FD17700D40C7E /* DetailsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsListView.swift; sourceTree = "<group>"; };
+		D38987BF2A3FD6A300D40C7E /* ExecuteCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecuteCommand.swift; sourceTree = "<group>"; };
+		D38987C12A3FD73900D40C7E /* AddDependencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDependencyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,12 +44,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D302F1D82A3FDA6200614246 /* Markdown in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D302F1D52A3FDA1000614246 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				D38987BF2A3FD6A300D40C7E /* ExecuteCommand.swift */,
+				D302F1D32A3FDA0600614246 /* GetReadme.swift */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
 		D38987962A3F7C9B00D40C7E = {
 			isa = PBXGroup;
 			children = (
@@ -62,13 +81,14 @@
 		D38987A12A3F7C9B00D40C7E /* Involucrum */ = {
 			isa = PBXGroup;
 			children = (
+				D302F1D52A3FDA1000614246 /* Functions */,
+				D38987BC2A3FD15C00D40C7E /* Views */,
 				D38987B12A3F7D0600D40C7E /* Models */,
 				D38987A22A3F7C9B00D40C7E /* InvolucrumApp.swift */,
 				D38987A42A3F7C9B00D40C7E /* ContentView.swift */,
 				D38987A62A3F7C9C00D40C7E /* Assets.xcassets */,
 				D38987AB2A3F7C9C00D40C7E /* Involucrum.entitlements */,
 				D38987A82A3F7C9C00D40C7E /* Preview Content */,
-				D38987B82A3F907A00D40C7E /* WebView.swift */,
 			);
 			path = Involucrum;
 			sourceTree = "<group>";
@@ -90,6 +110,16 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		D38987BC2A3FD15C00D40C7E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D38987B82A3F907A00D40C7E /* WebView.swift */,
+				D38987BD2A3FD17700D40C7E /* DetailsListView.swift */,
+				D38987C12A3FD73900D40C7E /* AddDependencyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +136,9 @@
 			dependencies = (
 			);
 			name = Involucrum;
+			packageProductDependencies = (
+				D302F1D72A3FDA6200614246 /* Markdown */,
+			);
 			productName = Involucrum;
 			productReference = D389879F2A3F7C9B00D40C7E /* Involucrum.app */;
 			productType = "com.apple.product-type.application";
@@ -134,6 +167,9 @@
 				Base,
 			);
 			mainGroup = D38987962A3F7C9B00D40C7E;
+			packageReferences = (
+				D302F1D62A3FDA6200614246 /* XCRemoteSwiftPackageReference "markdown" */,
+			);
 			productRefGroup = D38987A02A3F7C9B00D40C7E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -161,8 +197,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D38987B32A3F7D1D00D40C7E /* NodePackage.swift in Sources */,
+				D38987BE2A3FD17700D40C7E /* DetailsListView.swift in Sources */,
+				D38987C02A3FD6A300D40C7E /* ExecuteCommand.swift in Sources */,
 				D38987B92A3F907A00D40C7E /* WebView.swift in Sources */,
 				D38987A52A3F7C9B00D40C7E /* ContentView.swift in Sources */,
+				D302F1D42A3FDA0600614246 /* GetReadme.swift in Sources */,
+				D38987C22A3FD73900D40C7E /* AddDependencyView.swift in Sources */,
 				D38987B72A3F820E00D40C7E /* PackageJson.swift in Sources */,
 				D38987A32A3F7C9B00D40C7E /* InvolucrumApp.swift in Sources */,
 			);
@@ -366,6 +406,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D302F1D62A3FDA6200614246 /* XCRemoteSwiftPackageReference "markdown" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jaywcjlove/markdown";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D302F1D72A3FDA6200614246 /* Markdown */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D302F1D62A3FDA6200614246 /* XCRemoteSwiftPackageReference "markdown" */;
+			productName = Markdown;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D38987972A3F7C9B00D40C7E /* Project object */;
 }
