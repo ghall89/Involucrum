@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D302F1D42A3FDA0600614246 /* GetReadme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D302F1D32A3FDA0600614246 /* GetReadme.swift */; };
 		D302F1D82A3FDA6200614246 /* Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = D302F1D72A3FDA6200614246 /* Markdown */; };
+		D332857A2A45DC1C00918B30 /* ObservableNodeProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33285792A45DC1C00918B30 /* ObservableNodeProject.swift */; };
 		D38987A32A3F7C9B00D40C7E /* InvolucrumApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38987A22A3F7C9B00D40C7E /* InvolucrumApp.swift */; };
 		D38987A52A3F7C9B00D40C7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38987A42A3F7C9B00D40C7E /* ContentView.swift */; };
 		D38987A72A3F7C9C00D40C7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D38987A62A3F7C9C00D40C7E /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		D302F1D32A3FDA0600614246 /* GetReadme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReadme.swift; sourceTree = "<group>"; };
+		D33285792A45DC1C00918B30 /* ObservableNodeProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableNodeProject.swift; sourceTree = "<group>"; };
 		D389879F2A3F7C9B00D40C7E /* Involucrum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Involucrum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38987A22A3F7C9B00D40C7E /* InvolucrumApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvolucrumApp.swift; sourceTree = "<group>"; };
 		D38987A42A3F7C9B00D40C7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		D38987A12A3F7C9B00D40C7E /* Involucrum */ = {
 			isa = PBXGroup;
 			children = (
+				D33285792A45DC1C00918B30 /* ObservableNodeProject.swift */,
 				D302F1D52A3FDA1000614246 /* Functions */,
 				D38987BC2A3FD15C00D40C7E /* Views */,
 				D38987B12A3F7D0600D40C7E /* Models */,
@@ -198,6 +201,7 @@
 			files = (
 				D38987B32A3F7D1D00D40C7E /* NodePackage.swift in Sources */,
 				D38987BE2A3FD17700D40C7E /* DetailsListView.swift in Sources */,
+				D332857A2A45DC1C00918B30 /* ObservableNodeProject.swift in Sources */,
 				D38987C02A3FD6A300D40C7E /* ExecuteCommand.swift in Sources */,
 				D38987B92A3F907A00D40C7E /* WebView.swift in Sources */,
 				D38987A52A3F7C9B00D40C7E /* ContentView.swift in Sources */,

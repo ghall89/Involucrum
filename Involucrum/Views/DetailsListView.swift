@@ -1,13 +1,19 @@
 import SwiftUI
 
 struct DetailsListView: View {
+	@EnvironmentObject var observableNodeProject: ObservableNodeProject
+	
 	@Binding var data: PackageJson?
 	@Binding var readMe: String
 	
 	private func setReadMe(npmName: String) {
-		getReadme(packageName: npmName, completion: {result in
-			print(result)
-		})
+		let readMePath = URL(filePath: "node_modules/\(npmName)/README.md", relativeTo: observableNodeProject.projectLocation)
+		do {
+			readMe = try String(contentsOf: readMePath)
+			print(readMe)
+		} catch {
+			print("Error loading readme:", error)
+		}
 	}
 	
 	var body: some View {

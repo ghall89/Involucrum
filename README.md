@@ -16,7 +16,11 @@ A macOS application for viewing and (eventually) manipulating the Package.json f
 
 ## Build
 
-You can build from source using Xcode 14.3 or later.  
+You can build from source using Xcode 14.3 or later.
+
+## Acknowledgements
+
+- [SwiftUI Markdown](https://github.com/jaywcjlove/swiftui-markdown)
 
 ## License
 
